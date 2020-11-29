@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wolfgang Indumentaria</title>
+</head>
+
+
+<body>
+    <div id="contenedor">
+        <header>
+            <img src='/img/wolfgang.png' alt="Wolfgang Tienda de Indumentaria">
+            <h2>No se trata de como nos vemos, sino de lo que somos.</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="/img/bikerbuddies1.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/img/bikerbuddies2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/img/bikerbuddies3.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/img/bikerbuddies4.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/img/bikerbuddies5.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/img/bikerbuddies6.jpg">
+                </div>
+            </div>
+            <br>
+        </header>
+        <nav>
+            <ul id="menu">
+                <li><a class="menuitem" href="#menu">Inicio</a></li>
+                <li><a class="menuitem" href="#nosotros">La Manada</a></li>
+                <li><a class="menuitem" href="#showroom">Showroom</a></li>
+                <li><a class="menuitem" href="#tiendas">Tiendas</a></li>
+                <li><a class="menuitem" href="#contacto">Sé parte</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="nosotros">
+                <p>“Dime con quien andas y te diré quien eres”, recita un viejo refran. </b> Nuestra marca diseña productos de indumentaria para quienes conocen su identidad, porque se identifican con sus pares. <b></b> Y como todas las hermandades fuertes,
+                    nuestros productos son sinonimos de audacia, durabilidad y fortaleza.</p>
+            </section>
+            <h2 id="titulo-showroom">Mirá lo que tenemos para vos:</h2>
+            <section id="showroom">
+                <div>
+                    <div id="col1">
+                        <img src="./img/campera-cuero-vintage.jpg" alt="Campera Cuero Vintage" />
+                        <img src="./img/motorcyclist.jpg" alt="Campera Cuero Vintage" />
+                    </div>
+                    <div id="col2">
+                        <div>
+                            <img src="./img/campera-cuero-negro.jpg" alt="Campera Cuero Negro" />
+                            <img src="./img/equipo-dirt.jpg" alt="Campera Cuero Vintage" />
+                        </div>
+                        <div id="col3">
+                            <img src="./img/botas.jpg" alt="Campera Cuero" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tiendas">
+
+            </section>
+            <section id="contacto">
+                <div id="formulario">
+
+                </div>
+                <div id="redes">
+                    <div>
+                        <img src="img/instagram.png" alt="Encontranos en Instagram" href="https://instagram.com" />
+                        <img id="meli" src="img/mercadolibre.png" alt="Encontranos en tienda online" href="https://mercadolibre.com.ar" />
+                        <img src="img/facebook.png" alt="Encontranos en Facebook" href="https://facebook.com" />
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Wolfgang | </p>
+            <p>Marca Registrada | </p>
+            <p>2020</p>
+        </footer>
+    </div>
+    <script defer>
+        var slideIndex = 5;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #contenedor {
+        background-color: #16130E;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        margin: 0 auto;
+        width: 1300px;
+    }
+    
+    h1,
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        margin: 70px auto;
+    }
+    
+    header,
+    footer {
+        text-align: center;
+        color: white;
+        padding: 40px;
+    }
+    
+    header img {
+        max-width: 400px;
+    }
+    
+    footer p {
+        display: inline;
+    }
+    
+    nav ul {
+        text-align: center;
+        padding: 40px;
+    }
+    
+    nav li {
+        margin: 30px;
+        display: inline;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .menuitem {
+        border-radius: 5px;
+        padding: 10px 60px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 1px solid #6D7365;
+    }
+    
+    .menuitem:hover {
+        background: black;
+        border: 1px solid #FFB92C;
+        color: white;
+        padding: 10px 30px;
+    }
+    
+    #nosotros {
+        border: 2px solid #FFB92C;
+        margin: 80px auto;
+        width: 60vw;
+        padding: 20px;
+        border-radius: 20px;
+        padding-top: 20px;
+        font-size: 22px;
+    }
+    
+    #showroom {
+        margin: 30px;
+        column-count: 3;
+        column-gap: 15px;
+        column-width: 200px;
+        border: gray solid;
+        display: block;
+    }
+    
+    #showroom img {
+        border: 2px solid #FFB92C;
+        border-radius: 5;
+        max-width: 250px;
+        max-height: 250px;
+        object-fit: cover;
+        margin: 20px 70px;
+    }
+    
+    #redes div {
+        width: 100%;
+        justify-content: center;
+        margin-left: 35%;
+    }
+    
+    #redes img {
+        max-height: 60px;
+        height: 50px;
+        padding: 30px;
+    }
+    
+    #meli {
+        max-width: 80px;
+    }
+    
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    .fade img {}
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
