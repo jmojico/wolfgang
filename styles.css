@@ -26,7 +26,7 @@
     }
     
     header img {
-        max-width: 400px;
+        max-width: 500px;
     }
     
     footer p {
@@ -111,8 +111,54 @@
         margin: auto;
     }
     
-    .mySlides {
+    .slides {
         display: none;
+        position: relative;
+        width: 900px;
+        height: 300px;
+        margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+    }
+    /* .image {
+        position: relative;
+        width: 350px;
+        height: 500px;
+        margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+    }
+    
+    
+    #showroom .image:nth-child(1) {
+        background-image: url('/img/bikerbuddies6.jpg');
+    }
+     */
+    
+    .slideshow-container div:nth-child(1) {
+        background-image: url('/img/bikerbuddies1.jpg');
+    }
+    
+    .slideshow-container div:nth-child(2) {
+        background-image: url('/img/bikerbuddies2.jpg');
+    }
+    
+    .slideshow-container div:nth-child(3) {
+        background-image: url('/img/bikerbuddies3.jpg');
+    }
+    
+    .slideshow-container div:nth-child(4) {
+        background-image: url('/img/bikerbuddies4.jpg');
+    }
+    
+    .slideshow-container div:nth-child(5) {
+        background-image: url('/img/bikerbuddies5.jpg');
+    }
+    
+    .slideshow-container div:nth-child(6) {
+        background-image: url('/img/bikerbuddies6.jpg');
     }
     
     .prev:hover,
@@ -129,6 +175,15 @@
     
     .fade img {
         margin: 100px;
+    }
+    
+    #prueba div:nth-child(1) {
+        background-image: url('/img/bikerbuddies1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
     }
     
     @-webkit-keyframes fade {
