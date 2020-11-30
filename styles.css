@@ -1,205 +1,240 @@
-    * {
-        margin: 0px;
-        padding: 0px;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#contenedor {
+    background-color: #16130E;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 0 auto;
+    width: 1300px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 90px auto;
+}
+
+header,
+footer {
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFB92C;
+    font-size: 20px;
+}
+
+footer p {
+    display: inline;
+}
+
+footer div {
+    margin-bottom: 25px;
+}
+
+header img {
+    max-width: 700px;
+}
+
+nav ul {
+    text-align: center;
+    padding: 40px;
+}
+
+nav li {
+    margin: 30px;
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menuitem {
+    border-radius: 5px;
+    padding: 10px 60px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 1px solid #6D7365;
+}
+
+.menuitem:hover {
+    background: black;
+    border: 1px solid #FFB92C;
+    color: white;
+    padding: 10px 30px;
+}
+
+#nosotros {
+    border: 2px solid #FFB92C;
+    margin: 80px auto;
+    width: 60vw;
+    padding: 50px;
+    border-radius: 20px;
+    font-size: 27px;
+    line-height: 42px;
+    text-align: center;
+}
+
+#showroom {
+    margin: 30px;
+    column-count: 3;
+    column-gap: 15px;
+    column-width: 200px;
+    border: gray solid;
+    display: block;
+    height: 600px;
+}
+
+#showroom img {
+    border: 2px solid #FFB92C;
+    border-radius: 5;
+    max-width: 250px;
+    max-height: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px 70px;
+}
+
+#redes div {
+    width: 100%;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+#redes img {
+    max-height: 60px;
+    height: 50px;
+    padding: 30px;
+}
+
+#meli {
+    max-width: 80px;
+}
+
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    border: 2px solid white;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+    width: 1100px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+}
+
+.slideshow-container div:nth-child(1) {
+    background-image: url('/img/bikerbuddies1.jpg');
+}
+
+.slideshow-container div:nth-child(2) {
+    background-image: url('/img/bikerbuddies2.jpg');
+}
+
+.slideshow-container div:nth-child(3) {
+    background-image: url('/img/bikerbuddies3.jpg');
+}
+
+.slideshow-container div:nth-child(4) {
+    background-image: url('/img/bikerbuddies4.jpg');
+}
+
+.slideshow-container div:nth-child(5) {
+    background-image: url('/img/bikerbuddies5.jpg');
+}
+
+.slideshow-container div:nth-child(6) {
+    background-image: url('/img/bikerbuddies6.jpg');
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#tienda iframe {}
+
+#tienda {
+    position: relative;
+    left: 250px;
+    margin-bottom: 70px;
+    border: 3px solid white;
+    width: 800px;
+    height: 600px;
+}
+
+.fade img {
+    margin: 100px;
+}
+
+#subir {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: darkslategrey;
+    /* Set a background color */
+    color: #FFB92C;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#subir:hover {
+    background-color: gray;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
     }
-    
-    #contenedor {
-        background-color: #16130E;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: white;
-        margin: 0 auto;
-        width: 1300px;
+    to {
+        opacity: 1
     }
-    
-    h1,
-    h2 {
-        text-align: center;
-        font-size: 25px;
-        margin: 70px auto;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
     }
-    
-    header,
-    footer {
-        text-align: center;
-        color: white;
-        padding: 40px;
+    to {
+        opacity: 1
     }
-    
-    header img {
-        max-width: 500px;
-    }
-    
-    footer p {
-        display: inline;
-    }
-    
-    nav ul {
-        text-align: center;
-        padding: 40px;
-    }
-    
-    nav li {
-        margin: 30px;
-        display: inline;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    
-    .menuitem {
-        border-radius: 5px;
-        padding: 10px 60px;
-        color: white;
-        text-decoration: none;
-        padding: 10px 30px;
-        border: 1px solid #6D7365;
-    }
-    
-    .menuitem:hover {
-        background: black;
-        border: 1px solid #FFB92C;
-        color: white;
-        padding: 10px 30px;
-    }
-    
-    #nosotros {
-        border: 2px solid #FFB92C;
-        margin: 80px auto;
-        width: 60vw;
-        padding: 20px;
-        border-radius: 20px;
-        padding-top: 20px;
-        font-size: 22px;
-    }
-    
-    #showroom {
-        margin: 30px;
-        column-count: 3;
-        column-gap: 15px;
-        column-width: 200px;
-        border: gray solid;
-        display: block;
-    }
-    
-    #showroom img {
-        border: 2px solid #FFB92C;
-        border-radius: 5;
-        max-width: 250px;
-        max-height: 250px;
-        object-fit: cover;
-        margin: 20px 70px;
-    }
-    
-    #redes div {
-        width: 100%;
-        justify-content: center;
-        margin-left: 35%;
-    }
-    
-    #redes img {
-        max-height: 60px;
-        height: 50px;
-        padding: 30px;
-    }
-    
-    #meli {
-        max-width: 80px;
-    }
-    
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
-    
-    .slides {
-        display: none;
-        position: relative;
-        width: 900px;
-        height: 300px;
-        margin: 0 auto;
-        background-position: center;
-        background-size: cover;
-        background-color: transparent;
-    }
-    /* .image {
-        position: relative;
-        width: 350px;
-        height: 500px;
-        margin: 0 auto;
-        background-position: center;
-        background-size: cover;
-        background-color: transparent;
-    }
-    
-    
-    #showroom .image:nth-child(1) {
-        background-image: url('/img/bikerbuddies6.jpg');
-    }
-     */
-    
-    .slideshow-container div:nth-child(1) {
-        background-image: url('/img/bikerbuddies1.jpg');
-    }
-    
-    .slideshow-container div:nth-child(2) {
-        background-image: url('/img/bikerbuddies2.jpg');
-    }
-    
-    .slideshow-container div:nth-child(3) {
-        background-image: url('/img/bikerbuddies3.jpg');
-    }
-    
-    .slideshow-container div:nth-child(4) {
-        background-image: url('/img/bikerbuddies4.jpg');
-    }
-    
-    .slideshow-container div:nth-child(5) {
-        background-image: url('/img/bikerbuddies5.jpg');
-    }
-    
-    .slideshow-container div:nth-child(6) {
-        background-image: url('/img/bikerbuddies6.jpg');
-    }
-    
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    
-    .fade img {
-        margin: 100px;
-    }
-    
-    #prueba div:nth-child(1) {
-        background-image: url('/img/bikerbuddies1.jpg');
-        background-position: center;
-        background-size: cover;
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-    }
-    
-    @-webkit-keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
-    
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-        to {
-            opacity: 1
-        }
-    }
+}
