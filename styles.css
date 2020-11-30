@@ -1,10 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
+    background-color: #16130E;
 }
 
 #contenedor {
-    background-color: #16130E;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     margin: 0 auto;
@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     margin: 90px auto;
 }
 
@@ -95,13 +95,14 @@ nav li {
     column-gap: 15px;
     column-width: 200px;
     border: gray solid;
+    border-radius: 10px;
     display: block;
     height: 600px;
 }
 
 #showroom img {
     border: 2px solid #FFB92C;
-    border-radius: 5;
+    border-radius: 5px;
     max-width: 250px;
     max-height: 250px;
     height: 300px;
@@ -178,13 +179,12 @@ nav li {
     animation-duration: 1.5s;
 }
 
-#tienda iframe {}
-
 #tienda {
     position: relative;
     left: 250px;
     margin-bottom: 70px;
-    border: 3px solid white;
+    border: 6px solid gray;
+    border-radius: 10px;
     width: 800px;
     height: 600px;
 }
